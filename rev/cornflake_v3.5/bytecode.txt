@@ -1,0 +1,589 @@
+LOAD bytecode [0]: 85
+A = C (85)
+B = A (85)
+LOAD bytecode [4]: 85
+XOR C B: 85 ^ 85 = 0
+LOAD input 0 b's'
+C = B (115)
+A = C (115)
+PUSH A: 115 []
+LOAD bytecode [11]: 115
+A = C (115)
+POP B: 115 []
+B == A: 115 == 115
+########################################
+modify next byte [17] +1: 6
+LOAD bytecode [18]: 85
+A = C (85)
+B = A (85)
+LOAD bytecode [22]: 84
+XOR C B: 84 ^ 85 = 1
+LOAD input 1 b'r'
+C = B (114)
+A = C (114)
+PUSH A: 114 []
+LOAD bytecode [29]: 85
+A = C (85)
+B = A (85)
+LOAD bytecode [33]: 86
+XOR C B: 86 ^ 85 = 3
+A = C (3)
+POP B: 114 []
+ADD B A: 114 + 3 = 117
+C = B (117)
+A = C (117)
+PUSH A: 117 []
+LOAD bytecode [42]: 85
+A = C (85)
+B = A (85)
+LOAD bytecode [46]: 87
+XOR C B: 87 ^ 85 = 2
+A = C (2)
+PUSH A: 2 [117]
+LOAD bytecode [51]: 85
+A = C (85)
+B = A (85)
+LOAD bytecode [55]: 87
+XOR C B: 87 ^ 85 = 2
+LOAD input 2 b'd'
+C = B (100)
+A = C (100)
+POP B: 2 [117]
+C = B (2)
+SUB A C: 100 - 2 = 98
+B = A (98)
+C = B (98)
+POP B: 117 []
+XOR C B: 98 ^ 117 = 23
+A = C (23)
+PUSH A: 23 []
+LOAD bytecode [70]: 23
+A = C (23)
+POP B: 23 []
+B == A: 23 == 23
+########################################
+modify next byte [76] +1: 6
+LOAD bytecode [77]: 85
+A = C (85)
+B = A (85)
+LOAD bytecode [81]: 86
+XOR C B: 86 ^ 85 = 3
+LOAD input 3 b'n'
+C = B (110)
+A = C (110)
+PUSH A: 110 []
+LOAD bytecode [88]: 110
+A = C (110)
+POP B: 110 []
+B == A: 110 == 110
+########################################
+modify next byte [94] +1: 6
+LOAD bytecode [95]: 85
+A = C (85)
+B = A (85)
+LOAD bytecode [99]: 81
+XOR C B: 81 ^ 85 = 4
+LOAD input 4 b'l'
+C = B (108)
+A = C (108)
+PUSH A: 108 []
+LOAD bytecode [106]: 85
+A = C (85)
+B = A (85)
+LOAD bytecode [110]: 80
+XOR C B: 80 ^ 85 = 5
+LOAD input 5 b'e'
+C = B (101)
+A = C (101)
+POP B: 108 []
+ADD B A: 108 + 101 = 209
+C = B (209)
+A = C (209)
+PUSH A: 209 []
+LOAD bytecode [121]: 209
+A = C (209)
+POP B: 209 []
+B == A: 209 == 209
+########################################
+modify next byte [127] +1: 6
+LOAD bytecode [128]: 33
+LOAD input 33 b'}'
+C = B (125)
+A = C (125)
+PUSH A: 125 []
+LOAD bytecode [134]: 85
+A = C (85)
+B = A (85)
+LOAD bytecode [138]: 86
+XOR C B: 86 ^ 85 = 3
+A = C (3)
+POP B: 125 []
+ADD B A: 125 + 3 = 128
+C = B (128)
+A = C (128)
+PUSH A: 128 []
+LOAD bytecode [147]: 85
+A = C (85)
+B = A (85)
+LOAD bytecode [151]: 87
+XOR C B: 87 ^ 85 = 2
+A = C (2)
+PUSH A: 2 [128]
+LOAD bytecode [156]: 21
+LOAD input 21 b'l'
+C = B (108)
+A = C (108)
+POP B: 2 [128]
+C = B (2)
+SUB A C: 108 - 2 = 106
+B = A (106)
+C = B (106)
+POP B: 128 []
+XOR C B: 106 ^ 128 = 234
+A = C (234)
+PUSH A: 234 []
+LOAD bytecode [170]: 234
+A = C (234)
+POP B: 234 []
+B == A: 234 == 234
+########################################
+modify next byte [176] +1: 6
+LOAD bytecode [177]: 85
+A = C (85)
+B = A (85)
+LOAD bytecode [181]: 86
+XOR C B: 86 ^ 85 = 3
+LOAD input 3 b'n'
+C = B (110)
+A = C (110)
+PUSH A: 110 []
+LOAD bytecode [188]: 85
+A = C (85)
+B = A (85)
+LOAD bytecode [192]: 83
+XOR C B: 83 ^ 85 = 6
+LOAD input 6 b'n'
+C = B (110)
+A = C (110)
+POP B: 110 []
+B == A: 110 == 110
+########################################
+A = C (1)
+PUSH A: 1 []
+LOAD bytecode [202]: 85
+A = C (85)
+B = A (85)
+LOAD bytecode [206]: 84
+XOR C B: 84 ^ 85 = 1
+A = C (1)
+POP B: 1 []
+B == A: 1 == 1
+########################################
+modify next byte [213] +1: 6
+LOAD bytecode [214]: 85
+A = C (85)
+B = A (85)
+LOAD bytecode [218]: 93
+XOR C B: 93 ^ 85 = 8
+LOAD input 8 b'r'
+C = B (114)
+A = C (114)
+PUSH A: 114 []
+LOAD bytecode [225]: 85
+A = C (85)
+B = A (85)
+LOAD bytecode [229]: 87
+XOR C B: 87 ^ 85 = 2
+POP B: 114 []
+MUL C B: 2 * 114 = 228
+A = C (228)
+PUSH A: 228 []
+LOAD bytecode [236]: 228
+A = C (228)
+POP B: 228 []
+B == A: 228 == 228
+########################################
+modify next byte [242] +1: 6
+LOAD bytecode [243]: 23
+LOAD input 23 b'm'
+C = B (109)
+A = C (109)
+PUSH A: 109 []
+LOAD bytecode [249]: 85
+A = C (85)
+B = A (85)
+LOAD bytecode [253]: 89
+XOR C B: 89 ^ 85 = 12
+LOAD input 12 b'z'
+C = B (122)
+A = C (122)
+POP B: 109 []
+C = B (109)
+SUB A C: 122 - 109 = 13
+B = A (13)
+C = B (13)
+A = C (13)
+PUSH A: 13 []
+LOAD bytecode [266]: 85
+A = C (85)
+B = A (85)
+LOAD bytecode [270]: 71
+XOR C B: 71 ^ 85 = 18
+LOAD input 18 b'z'
+C = B (122)
+POP B: 13 []
+XOR C B: 122 ^ 13 = 119
+A = C (119)
+PUSH A: 119 []
+LOAD bytecode [279]: 119
+A = C (119)
+POP B: 119 []
+B == A: 119 == 119
+########################################
+modify next byte [285] +1: 6
+LOAD bytecode [286]: 85
+A = C (85)
+B = A (85)
+LOAD bytecode [290]: 81
+XOR C B: 81 ^ 85 = 4
+A = C (4)
+PUSH A: 4 []
+LOAD bytecode [295]: 20
+LOAD input 20 b'@'
+C = B (64)
+POP B: 4 []
+DIV C B: 64 // 4 = 16
+A = C (16)
+PUSH A: 16 []
+LOAD bytecode [303]: 85
+A = C (85)
+B = A (85)
+LOAD bytecode [307]: 90
+XOR C B: 90 ^ 85 = 15
+LOAD input 15 b'n'
+C = B (110)
+POP B: 16 []
+XOR C B: 110 ^ 16 = 126
+A = C (126)
+PUSH A: 126 []
+LOAD bytecode [316]: 85
+A = C (85)
+B = A (85)
+LOAD bytecode [320]: 95
+XOR C B: 95 ^ 85 = 10
+LOAD input 10 b'@'
+C = B (64)
+A = C (64)
+POP B: 126 []
+ADD B A: 126 + 64 = 190
+C = B (190)
+A = C (190)
+PUSH A: 190 []
+LOAD bytecode [331]: 190
+A = C (190)
+POP B: 190 []
+B == A: 190 == 190
+########################################
+modify next byte [337] +1: 6
+LOAD bytecode [338]: 85
+A = C (85)
+B = A (85)
+LOAD bytecode [342]: 68
+XOR C B: 68 ^ 85 = 17
+LOAD input 17 b'p'
+C = B (112)
+A = C (112)
+PUSH A: 112 []
+LOAD bytecode [349]: 85
+A = C (85)
+B = A (85)
+LOAD bytecode [353]: 94
+XOR C B: 94 ^ 85 = 11
+LOAD input 11 b'u'
+C = B (117)
+A = C (117)
+POP B: 112 []
+C = B (112)
+SUB A C: 117 - 112 = 5
+B = A (5)
+C = B (5)
+A = C (5)
+PUSH A: 5 []
+LOAD bytecode [366]: 29
+LOAD input 29 b']'
+C = B (93)
+POP B: 5 []
+XOR C B: 93 ^ 5 = 88
+A = C (88)
+PUSH A: 88 []
+LOAD bytecode [374]: 88
+A = C (88)
+POP B: 88 []
+B == A: 88 == 88
+########################################
+modify next byte [380] +1: 6
+LOAD bytecode [381]: 85
+A = C (85)
+B = A (85)
+LOAD bytecode [385]: 81
+XOR C B: 81 ^ 85 = 4
+A = C (4)
+PUSH A: 4 []
+LOAD bytecode [390]: 85
+A = C (85)
+B = A (85)
+LOAD bytecode [394]: 82
+XOR C B: 82 ^ 85 = 7
+LOAD input 7 b'{'
+C = B (123)
+POP B: 4 []
+DIV C B: 123 // 4 = 30
+A = C (30)
+PUSH A: 30 []
+LOAD bytecode [403]: 85
+A = C (85)
+B = A (85)
+LOAD bytecode [407]: 69
+XOR C B: 69 ^ 85 = 16
+LOAD input 16 b'w'
+C = B (119)
+POP B: 30 []
+XOR C B: 119 ^ 30 = 105
+A = C (105)
+PUSH A: 105 []
+LOAD bytecode [416]: 28
+LOAD input 28 b'u'
+C = B (117)
+A = C (117)
+POP B: 105 []
+ADD B A: 105 + 117 = 222
+C = B (222)
+A = C (222)
+PUSH A: 222 []
+LOAD bytecode [426]: 222
+A = C (222)
+POP B: 222 []
+B == A: 222 == 222
+########################################
+modify next byte [432] +1: 6
+LOAD bytecode [433]: 85
+A = C (85)
+B = A (85)
+LOAD bytecode [437]: 88
+XOR C B: 88 ^ 85 = 13
+LOAD input 13 b'@'
+C = B (64)
+A = C (64)
+PUSH A: 64 []
+LOAD bytecode [444]: 85
+A = C (85)
+B = A (85)
+LOAD bytecode [448]: 91
+XOR C B: 91 ^ 85 = 14
+LOAD input 14 b'B'
+C = B (66)
+A = C (66)
+POP B: 64 []
+ADD B A: 64 + 66 = 130
+C = B (130)
+A = C (130)
+PUSH A: 130 []
+POP B: 130 []
+C = B (130)
+A = C (130)
+PUSH A: 130 []
+LOAD bytecode [463]: 130
+A = C (130)
+POP B: 130 []
+B == A: 130 == 130
+########################################
+modify next byte [469] +1: 6
+LOAD bytecode [470]: 85
+A = C (85)
+B = A (85)
+LOAD bytecode [474]: 92
+XOR C B: 92 ^ 85 = 9
+LOAD input 9 b'3'
+C = B (51)
+A = C (51)
+PUSH A: 51 []
+LOAD bytecode [481]: 85
+A = C (85)
+B = A (85)
+LOAD bytecode [485]: 80
+XOR C B: 80 ^ 85 = 5
+A = C (5)
+PUSH A: 5 [51]
+POP B: 5 [51]
+C = B (5)
+POP B: 51 []
+A = C (5)
+C = B (51)
+B = A (5)
+DIV C B: 51 // 5 = 10
+A = C (10)
+PUSH A: 10 []
+LOAD bytecode [499]: 85
+A = C (85)
+B = A (85)
+LOAD bytecode [503]: 80
+XOR C B: 80 ^ 85 = 5
+POP B: 10 []
+MUL C B: 5 * 10 = 50
+A = C (50)
+PUSH A: 50 []
+LOAD bytecode [510]: 85
+A = C (85)
+B = A (85)
+LOAD bytecode [514]: 92
+XOR C B: 92 ^ 85 = 9
+LOAD input 9 b'3'
+C = B (51)
+A = C (51)
+POP B: 50 []
+C = B (50)
+SUB A C: 51 - 50 = 1
+B = A (1)
+C = B (1)
+A = C (1)
+PUSH A: 1 []
+LOAD bytecode [527]: 85
+A = C (85)
+B = A (85)
+LOAD bytecode [531]: 84
+XOR C B: 84 ^ 85 = 1
+A = C (1)
+POP B: 1 []
+B == A: 1 == 1
+########################################
+modify next byte [538] +1: 6
+LOAD bytecode [539]: 48
+A = C (48)
+PUSH A: 48 []
+LOAD bytecode [543]: 22
+LOAD input 22 b'1'
+C = B (49)
+A = C (49)
+POP B: 48 []
+C = B (48)
+SUB A C: 49 - 48 = 1
+B = A (1)
+C = B (1)
+LOAD input 1 b'r'
+C = B (114)
+A = C (114)
+PUSH A: 114 []
+LOAD bytecode [557]: 114
+A = C (114)
+POP B: 114 []
+B == A: 114 == 114
+########################################
+modify next byte [563] +1: 6
+LOAD bytecode [564]: 22
+LOAD input 22 b'1'
+C = B (49)
+A = C (49)
+PUSH A: 49 []
+LOAD bytecode [570]: 24
+LOAD input 24 b'3'
+C = B (51)
+A = C (51)
+POP B: 49 []
+ADD B A: 49 + 51 = 100
+C = B (100)
+A = C (100)
+PUSH A: 100 []
+POP B: 100 []
+C = B (100)
+A = C (100)
+PUSH A: 100 []
+LOAD bytecode [584]: 100
+A = C (100)
+POP B: 100 []
+B == A: 100 == 100
+########################################
+modify next byte [590] +1: 6
+LOAD bytecode [591]: 27
+LOAD input 27 b'8'
+C = B (56)
+A = C (56)
+PUSH A: 56 []
+LOAD bytecode [597]: 85
+A = C (85)
+B = A (85)
+LOAD bytecode [601]: 86
+XOR C B: 86 ^ 85 = 3
+POP B: 56 []
+MUL C B: 3 * 56 = 168
+A = C (168)
+PUSH A: 168 []
+LOAD bytecode [608]: 25
+LOAD input 25 b'z'
+C = B (122)
+A = C (122)
+PUSH A: 122 [168]
+LOAD bytecode [614]: 26
+LOAD input 26 b'R'
+C = B (82)
+A = C (82)
+PUSH A: 82 [168, 122]
+LOAD bytecode [620]: 85
+A = C (85)
+B = A (85)
+LOAD bytecode [624]: 87
+XOR C B: 87 ^ 85 = 2
+POP B: 82 [168, 122]
+MUL C B: 2 * 82 = 164
+A = C (164)
+POP B: 122 [168]
+ADD B A: 122 + 164 = 286
+C = B (286)
+A = C (286)
+POP B: 168 []
+C = B (168)
+SUB A C: 286 - 168 = 118
+B = A (118)
+C = B (118)
+A = C (118)
+PUSH A: 118 []
+LOAD bytecode [641]: 118
+A = C (118)
+POP B: 118 []
+B == A: 118 == 118
+########################################
+modify next byte [647] +1: 6
+LOAD bytecode [648]: 30
+LOAD input 30 b'x'
+C = B (120)
+A = C (120)
+PUSH A: 120 []
+LOAD bytecode [654]: 31
+LOAD input 31 b'0'
+C = B (48)
+A = C (48)
+POP B: 120 []
+ADD B A: 120 + 48 = 168
+C = B (168)
+A = C (168)
+PUSH A: 168 []
+LOAD bytecode [664]: 32
+LOAD input 32 b'1'
+C = B (49)
+A = C (49)
+POP B: 168 []
+ADD B A: 168 + 49 = 217
+C = B (217)
+A = C (217)
+PUSH A: 217 []
+POP B: 217 []
+C = B (217)
+A = C (217)
+PUSH A: 217 []
+LOAD bytecode [678]: 217
+A = C (217)
+POP B: 217 []
+B == A: 217 == 217
+########################################
+modify next byte [684] +1: 6
+True 685 0
+bytearray(b'srdnlen{r3@uz@Bnwpz@@l1m3zR8u]x01}')
